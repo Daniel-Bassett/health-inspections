@@ -1,3 +1,4 @@
 pandas
 numpy
 plotly_express
+streamlit_option_menu
