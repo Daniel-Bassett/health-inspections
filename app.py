@@ -59,7 +59,7 @@ if selected == 'Inspection Scores':
             fig.update_layout(mapbox_center=dict(lat=latt, lon=lonn), mapbox_zoom=15)
 
     with graph_plot:
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
 if selected == 'Filtered Scores':
     st.title('Filtered Scores')
     col1, col2 = st.columns([3, 5])
@@ -67,5 +67,5 @@ if selected == 'Filtered Scores':
         score_range = st.slider('Choose a range of Scores', value=[40, 100], min_value=40, max_value=100, step=5)
     filtered_df = df[df['Score'].between(score_range[0], score_range[1])]
     fig = make_map(filtered_df)
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
