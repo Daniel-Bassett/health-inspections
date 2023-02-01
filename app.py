@@ -25,7 +25,7 @@ def make_map(df):
                             range_color=[65, 100],
     )
     fig.update_layout(mapbox_style='open-street-map')
-    fig.update_layout(showlegend=False)
+    fig.update_layout(coloraxis_showscale=False)
     fig.update_traces(customdata=customdata, hovertemplate='Name: %{customdata[0]}<br>Score: %{customdata[1]}</br>Address: %{customdata[2]}<br>Inspection Date: %{customdata[3]}</br>')
     return fig
 
@@ -49,15 +49,13 @@ if selected == 'Inspection Scores':
     graph_plot = st.empty()
 
     fig = make_map(df)
+    
 
     with df_plot:
         st.dataframe(df[df['name & address'] == selection][['Restaurant Name', 'Score', 'Inspection Date']])
-
-
     with button_plot:
         if st.button("Go To Restaurant"):
             fig.update_layout(mapbox_center=dict(lat=latt, lon=lonn), mapbox_zoom=15)
-
     with graph_plot:
         st.plotly_chart(fig, use_container_width=True)
 if selected == 'Filtered Scores':
