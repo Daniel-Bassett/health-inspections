@@ -112,7 +112,7 @@ with tab2:
     st.dataframe(restaurant)
     if len(restaurant) > 1:
         fig = make_line_graph(restaurant)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, config=dict({'staticPlot':True}))
 
 with tab3:
     col1, col2 = st.columns([3, 5])
