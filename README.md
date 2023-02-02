@@ -1,10 +1,10 @@
 # Austin Food Establishment Inspections Scores
 
 ## Overview
-This project provides an analysis of inspection scores for food establishments in the Austin area. The app can be found [here](https://crispybacon233-health-inspections-app-1qnsr3.streamlit.app/) The data was sourced from the Austin data [website](https://data.austintexas.gov/Health-and-Community-Services/Food-Establishment-Inspection-Scores/ecmv-9xxi) and processed using Pandas to clean and organize the information. More accurate latitude and longitude coordinates were scraped from Google Maps using Selenium to complete the data. The results of the analysis are presented through interactive visualizations made with Plotly Express, and are available through a web app created with Streamlit.
+This project aims to make the inspection scores of food establishments in the Austin area more accessible to the public. The app can be found [here](https://crispybacon233-health-inspections-app-1qnsr3.streamlit.app/). The data was sourced from the Austin data [website](https://data.austintexas.gov/Health-and-Community-Services/Food-Establishment-Inspection-Scores/ecmv-9xxi) and processed using Pandas to clean and organize the information. More accurate latitude and longitude coordinates were scraped from Google Maps using Selenium to complete the data. The results of the analysis are presented through interactive visualizations made with Plotly Express, and are available through a web app created with Streamlit.
 
 ## Data Cleaning and Preparation
-The original data from the government website was not organized and had missing information. Pandas was used to clean and organize the data to ensure accuracy and consistency. Further, the latitude and longitude coordinates were often times too general or completely missing. Selenium was used to scrape this information off of Google Maps.
+The original data from the government website was not well-organized and had missing information. Pandas was used to clean and organize the data to ensure accuracy and consistency. Further, the latitude and longitude coordinates were often times too general or completely missing. Selenium was used to scrape this information off of Google Maps.
 
 ## Visualizations
 The visualizations for this project include:
