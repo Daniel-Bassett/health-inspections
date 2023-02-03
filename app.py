@@ -51,7 +51,7 @@ selected = option_menu(
     icons=['pin-map', 'graph-up', 'filter-square'],
     styles= {'container': {
                 'font-size': '2vw',
-                'min-font-size': '10px',
+                'min-font-size': '12px',
                 'max-font-size': '20px'
     }}
 )
