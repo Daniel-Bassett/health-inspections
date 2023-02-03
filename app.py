@@ -4,9 +4,14 @@ import plotly.express as px
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+@st.experimental_memo
+def load_data(dir):
+    df = pd.read_csv(dir)
+    return df
+
 # load data
-df = pd.read_csv('data/inspection-scores.csv')
-all_scores = pd.read_csv('data/all_scores.csv')
+df = load_data('data/inspection-scores.csv')
+all_scores = load_data('data/all_scores.csv')
 df.sort_values(by='Restaurant Name', inplace=True)
 df.reset_index(drop=True, inplace=True)
 df['name & address'] = df['Restaurant Name'] + ' ' + df['Address']
