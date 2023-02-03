@@ -52,7 +52,7 @@ selected = option_menu(
     styles= {'container': {
                 'font-size': '2vw',
                 'min-font-size': '17px',
-                'max-font-size': '20px'
+                'max-font-size': '25px'
     }}
 )
 
