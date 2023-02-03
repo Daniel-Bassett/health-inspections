@@ -50,8 +50,8 @@ selected = option_menu(
     orientation='horizontal',
     icons=['pin-map', 'graph-up', 'filter-square'],
     styles= {'container': {
-                'min-font-size': '15px',
-                'max-font-size': '20px'
+                'min-font-size': '10px',
+                'max-font-size': '15px'
     }}
 )
 
