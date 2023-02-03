@@ -48,7 +48,12 @@ selected = option_menu(
     default_index=0,
     options=['Inspection Scores', 'Scores Over Time', 'Filtered Scores'],
     orientation='horizontal',
-    icons=['pin-map', 'graph-up', 'filter-square']
+    icons=['pin-map', 'graph-up', 'filter-square'],
+    styles= {'container': {
+                'font-size': '2vw',
+                'min-font-size': '10px',
+                'max-font-size': '20px'
+    }}
 )
 
 # inspection scores page
